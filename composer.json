@@ -1,13 +1,19 @@
 {
     "require": {
-        "sculpin/sculpin": "dev-4.0.x-dev"
+        "sculpin/sculpin": "4.0.0-alpha1"
     },
     "scripts": {
         "watch": [
+            "Composer\\Config::disableProcessTimeout",
             "vendor/bin/sculpin generate --watch --server"
         ],
         "publish": [
+            "Composer\\Config::disableProcessTimeout",
             "vendor/bin/sculpin generate --env=prod --output-dir=docs"
+        ],
+        "new": [
+            "Composer\\Config::disableProcessTimeout",
+            "./new.sh"
         ]
     },
     "config": {
