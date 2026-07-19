@@ -71,6 +71,16 @@
                 </a>
                 #}
 
+                <a href="#" rel="noreferrer noopener"
+                   target="mastodon"
+                   data-prompt="Please provide your Mastodon instance"
+                   data-edittext="✏️"
+                   data-editlabel="Edit your Mastodon instance"
+                   class="mastodon-share icon-mastodon">
+                   <img src="{{ site.url }}/assets/images/icons/mastodon.svg" class="icon-mastodon" alt="Share to Mastodon">
+                </a>
+                <script src="{{ site.url }}/assets/js/mastodon-share.js"></script>
+
                 <a class="icon-reddit" target="_blank" href="http://reddit.com/submit?title={{ page.title|url_encode }}&amp;url={{ site.url|url_encode}}{{ page.url|url_encode }}/">
                     <i class="fa fa-reddit-square"></i><span class="hidden">reddit</span>
                 </a>
