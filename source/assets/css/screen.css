@@ -626,3 +626,18 @@ main[role="main"] {
     margin-top: 10em;
   }
 }
+
+a.icon-mastodon {
+  display: inline-block;
+
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+footer > a > img.icon-mastodon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
